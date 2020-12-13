@@ -34,6 +34,7 @@ Let's say we have `50;40;10;0`, 50+40+10+0 = 100 so our total pool is 100.
 Upon opening a crate we have 50/100 of getting rarity 1 item, 40/100 for rarity 2, 10/100 for rarity 3 and we will never get a rarity 4
 `65;35` means we have 65/100 for rarity 1, 35/100 for rarity 2 and we will never get 3 or 4
 `1` means we will always get rarity 1 item
+Some item sets don't include items of all rarities, so the server eliminates them from the draw. It means that if we have `50;40;10;0` as a base ratio, but the crate doesn't contain a single rarity 2 item it's value is ignored as if we had `50;0;10;0`
 ### Items
 * **ItemSet** is a key used to link items to correct crates
 * **Rarity** **Type** and **Id** corresponding to ingame values
