@@ -8,7 +8,7 @@ New file `drops.json` will be created, which must be put in OpenFusion's tdata f
 ## How to use input.xlsx
 The file contains of 5 data sheets, containing different types of collumns. It is important that you **DON'T** modify sheets' or collumns' names, as they must correspond to names in OF's server code.
 
-Collumns starting with a `/` character are marked as comments, and will be ignored by the script. Collumns ending with a `+` character contain number lists, separated by `;`
+Collumns starting with a `/` character are marked as comments, and will be ignored by the script. Collumns ending with a `+` character contain number lists, separated by `;`. Collumns ending with `-` character are marked as strings instead of integers.
 ### Mob Drops
 * **DropType** is a value assigned to the enemies in game. Enemy drop types can be checked in xdt file 
 * **CrateIDs** contain a list of ids of all possible crates that can be received from this drop type
@@ -38,9 +38,12 @@ Some item sets don't include items of all rarities, so the server eliminates the
 ### Items
 * **ItemSet** is a key used to link items to correct crates
 * **Rarity** **Type** and **Id** corresponding to ingame values
-
-
-
-
+### NanoCapsules
+* **Crate** Id
+* **Nano** Id
+### Codes
+* **Code**
+* item **Type**
+* item **Id**
 
 [OpenFusion]: <https://github.com/OpenFusionProject/OpenFusion>
